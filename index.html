@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Les Pereira - Art Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; margin: 0; background: #fdfdfd; color: #333; }
+    header { text-align: center; padding: 2rem; }
+    main { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; padding: 1rem; }
+    .artwork { position: relative; max-width: 300px; cursor: pointer; transition: transform 0.3s; border: 1px solid #ccc; border-radius: 8px; background: #fff; overflow: hidden; }
+    .artwork img { width: 100%; height: auto; display: block; }
+    .caption { padding: 0.5rem; text-align: center; font-size: 0.9rem; }
+    .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 10; }
+    .modal img { max-width: 90%; max-height: 90%; }
+    .modal:target { display: flex; }
+    footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #777; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Les Pereira</h1>
+  <p>Artist | Painter | Digital Creator</p>
+</header>
+
+<main>
+  
+</a>
+  <a href="#img3" class="artwork">
+    <img src="LP-30.jpg" alt="Artwork 33">
+    <div class="caption">Boat in Sunset: Acrylic</div>
+</a>
+  <a href="#img3" class="artwork">
+    <img src="LP-31.jpg" alt="Artwork 34">
+    <div class="caption">Cat in window: Acrylic</div>
+</a>
+  <a href="#img3" class="artwork">
+    <img src="LP-32.jpg" alt="Artwork 35">
+    <div class="caption">Winter scene: Acrylic</div>
+</a>
+  <a href="#img3" class="artwork">
+    <img src="LP-33.jpg" alt="Artwork 36">
+    <div class="caption">Royer Park Bridge: Oil</div>
+</a>
+  <a href="#img3" class="artwork">
+    <img src="LP-34.jpg" alt="Artwork 37">
+    <div class="caption">Royer Park: Acrylic</div>
+</a>
+  <a href="#img3" class="artwork">
+    <img src="LP-35.jpg" alt="Artwork 38">
+    <div class="caption">California Beach: Acrylic</div>
+</a>
+  <a href="#img3" class="artwork">
+    <img src="LP-36.jpg" alt="Artwork 39">
+    <div class="caption">Hawaii Hanauma Bay: Oil</div>
+
+</a>
+    <!-- Add more artworks the same way -->
+</main>
+
+<!-- Hidden modals for each image -->
+<div id="img1" class="modal" onclick="this.style.display='none'">
+  <img src="your-image1.jpg" alt="Artwork 1 Enlarged">
+</div>
+<div id="img2" class="modal" onclick="this.style.display='none'">
+  <img src="your-image2.jpg" alt="Artwork 2 Enlarged">
+</div>
+
+<footer>
+  &copy; 2025 Les Pereira | Contact: your.email@example.com
+</footer>
+
+</body>
+</html>
+
